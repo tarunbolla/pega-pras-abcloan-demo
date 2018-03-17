@@ -1,0 +1,97 @@
+<OpenSpanDesignDocument Version="8.0.1026.0" Serializer="2.0" Culture="en-US">
+  <ComponentInfo>
+    <Type Value="OpenSpan.Automation.GlobalContainer" />
+    <Assembly Value="OpenSpan.Automation" />
+    <AssemblyReferences>
+      <Assembly Value="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Adapters, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Adapters.ActiveX, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Adapters.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Adapters.Windows, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Adapters.WinInet, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.ApplicationFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Interactions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Interactions.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Runtime.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Script, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OSComponents.Utilities.TestHarness, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c0cb69f111622a50" />
+    </AssemblyReferences>
+    <DynamicAssemblyReferences />
+    <FileReferences />
+    <BuildReferences />
+  </ComponentInfo>
+  <Component Version="1.0">
+    <OpenSpan.Automation.GlobalContainer Name="_ABCLoan_GC" Id="GlobalContainer-8D5898D5E756860" />
+    <OpenSpan.Interactions.Controls.RobotActivity Name="PEGA_GetBankLocationsByZip" Id="RobotActivity-8D5898D64061EF0">
+      <ActivityName Value="GET_BANK_LOCATIONS_BY_ZIP" />
+      <ClassName Value="ABC-ABCLoan-Work-Application" />
+      <Content Name="DynamicMembers">
+        <Items>
+          <OpenSpan.DynamicMembers.DynamicPropertyInfo dynamicType="Property" name="Bank_ID" canRead="True" canWrite="True" type="System.String" aliasName="Bank_ID" shouldSerialize="False" visibility="DefaultOn" source="" blockTypeName="" />
+          <OpenSpan.DynamicMembers.DynamicPropertyInfo dynamicType="Property" name="Case_ID" canRead="True" canWrite="True" type="System.String" aliasName="Case_ID" shouldSerialize="False" visibility="DefaultOn" source="" blockTypeName="" />
+          <OpenSpan.DynamicMembers.DynamicPropertyInfo dynamicType="Property" name="Location_Zip" canRead="True" canWrite="True" type="System.String" aliasName="Location_Zip" shouldSerialize="False" visibility="DefaultOn" source="" blockTypeName="" />
+          <OpenSpan.DynamicMembers.DynamicPropertyInfo dynamicType="Property" name="BankLocationsXML" canRead="True" canWrite="True" type="System.String" aliasName="BankLocationsXML" shouldSerialize="False" visibility="DefaultOn" source="" blockTypeName="" />
+        </Items>
+      </Content>
+      <Content Name="Fields">
+        <Capacity Value="4" />
+        <Items>
+          <OpenSpan.Interactions.Robotics.ClassField>
+            <DataType Value="String" />
+            <Id Value="!BANKID" />
+            <Label Value="Bank ID" />
+            <RuleName Value="BankID" />
+          </OpenSpan.Interactions.Robotics.ClassField>
+          <OpenSpan.Interactions.Robotics.ClassField>
+            <DataType Value="String" />
+            <Id Value="!BANKLOCATIONSXML" />
+            <Label Value="BankLocationsXML" />
+            <RuleName Value="BankLocationsXML" />
+          </OpenSpan.Interactions.Robotics.ClassField>
+          <OpenSpan.Interactions.Robotics.ClassField>
+            <DataType Value="String" />
+            <Id Value="!PYID" />
+            <Label Value="Case ID" />
+            <RuleName Value="pyID" />
+          </OpenSpan.Interactions.Robotics.ClassField>
+          <OpenSpan.Interactions.Robotics.ClassField>
+            <DataType Value="String" />
+            <Id Value="!LOCATIONZIP" />
+            <Label Value="Location Zip" />
+            <RuleName Value="LocationZip" />
+          </OpenSpan.Interactions.Robotics.ClassField>
+        </Items>
+      </Content>
+    </OpenSpan.Interactions.Controls.RobotActivity>
+    <OpenSpan.Script.Custom.Script Name="DOMHelpers" Id="Script-8D589F9AFF05B20">
+      <Content Name="DynamicMembers">
+        <Items>
+          <OpenSpan.DynamicMembers.DynamicMethodInfo dynamicType="Method" name="BankLocationStringToXML" aliasName="BankLocationStringToXML" visibility="DefaultOn" source="" blockTypeName="" returnType="System.String">
+            <param name="input" aliasName="input" paramType="System.String" isIn="False" isOut="False" position="0" />
+          </OpenSpan.DynamicMembers.DynamicMethodInfo>
+          <OpenSpan.DynamicMembers.DynamicMethodInfo dynamicType="Method" name="BankLocationXMLFromLookupTable" aliasName="BankLocationXMLFromLookupTable" visibility="DefaultOn" source="" blockTypeName="" returnType="System.String">
+            <param name="dataTable" aliasName="dataTable" paramType="System.Data.DataTable" isIn="False" isOut="False" position="0" />
+          </OpenSpan.DynamicMembers.DynamicMethodInfo>
+        </Items>
+      </Content>
+    </OpenSpan.Script.Custom.Script>
+    <OpenSpan.Controls.MessageDialog Name="messageDialog1" Id="MessageDialog-8D58A6EBB27DA20">
+      <Caption Value="Information" />
+    </OpenSpan.Controls.MessageDialog>
+    <OSComponents.Utilities.TestHarness.TestHarness Name="testHarness1" Id="TestHarness-8D58A89A7E616A0">
+      <AutomationHistoryCount Value="10" />
+      <Exceptions Value="True" />
+      <KeepOpen Value="True" />
+      <Logging Value="False" />
+      <TopMost Value="True" />
+      <WinHllapiDllName Value="" />
+    </OSComponents.Utilities.TestHarness.TestHarness>
+    <OpenSpan.Controls.StringUtils Name="stringUtils1" Id="StringUtils-8D58B810ECEB0F0" />
+  </Component>
+</OpenSpanDesignDocument>
