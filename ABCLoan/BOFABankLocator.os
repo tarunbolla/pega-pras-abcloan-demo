@@ -96,7 +96,7 @@
               </Items>
             </Content>
           </OpenSpan.Adapters.Web.MicrosoftHTMLFactory>
-          <OpenSpan.Adapters.Web.Controls.WebPage Name="pgBOFALocator" Id="WebPage-8D5898EBF336110">
+          <OpenSpan.Adapters.Web.Controls.WebPage Name="pgBOFALocations" Id="WebPage-8D5898F2FD9BA40">
             <DummyPropertyToDetectReplaceUndo Value="0" />
             <ForwardObjectExplorerEvent Value="True" />
             <IsGlobal Value="True" />
@@ -104,7 +104,7 @@
             <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlDocument, OpenSpan.Adapters.Web" />
             <Content Name="Controls">
               <Items>
-                <OpenSpan.Adapters.Web.Controls.Form Name="frmBOFALocator" Id="Form-8D5898EBF2E30F0">
+                <OpenSpan.Adapters.Web.Controls.Form Name="frmBofaLocator" Id="Form-8D5A0824BD0B1AD">
                   <DummyPropertyToDetectReplaceUndo Value="0" />
                   <ElementId Value="rioSearchForm" />
                   <ForwardObjectExplorerEvent Value="True" />
@@ -114,7 +114,7 @@
                   <UseElementId Value="True" />
                   <Content Name="Controls">
                     <Items>
-                      <OpenSpan.Adapters.Web.Controls.TextBox Name="txtZip" Id="TextBox-8D5898EBF261AA0">
+                      <OpenSpan.Adapters.Web.Controls.TextBox Name="txtZip" Id="TextBox-8D5A0824BC84D06">
                         <DummyPropertyToDetectReplaceUndo Value="0" />
                         <ElementId Value="rioSearchInput" />
                         <ForwardObjectExplorerEvent Value="True" />
@@ -124,126 +124,117 @@
                         <UseElementId Value="True" />
                         <Content Name="MatchRules">
                           <Items>
-                            <OpenSpan.Adapters.Web.MatchRules.InputTypeMatchRule Name="inputTypeMatchRule1" Id="InputTypeMatchRule-8D5898EBF53E160">
+                            <OpenSpan.Adapters.Web.MatchRules.InputTypeMatchRule Name="inputTypeMatchRule2" Id="InputTypeMatchRule-8D5A0824BDFA62F">
                               <Type Value="Text" />
                             </OpenSpan.Adapters.Web.MatchRules.InputTypeMatchRule>
-                            <OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule Name="elementIdMatchRule2" Id="ElementIdMatchRule-8D5898EBF58C360">
+                            <OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule Name="elementIdMatchRule5" Id="ElementIdMatchRule-8D5A0824BE91C4D">
                               <Text Value="Simple|True|(User Culture)|rioSearchInput" />
                             </OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule>
                           </Items>
                         </Content>
                       </OpenSpan.Adapters.Web.Controls.TextBox>
+                      <OpenSpan.Adapters.Web.Controls.Link Name="lnkSearch" Id="Link-8D5A0824DF57479">
+                        <DummyPropertyToDetectReplaceUndo Value="0" />
+                        <ElementId Value="rioSearchButton" />
+                        <ForwardObjectExplorerEvent Value="True" />
+                        <MatchingIndex Value="0" />
+                        <TagName Value="A" />
+                        <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlAnchorElement, OpenSpan.Adapters.Web" />
+                        <UseElementId Value="True" />
+                        <Content Name="MatchRules">
+                          <Items>
+                            <OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule Name="elementIdMatchRule6" Id="ElementIdMatchRule-8D5A0824E02460D">
+                              <Text Value="Simple|True|(User Culture)|rioSearchButton" />
+                            </OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule>
+                          </Items>
+                        </Content>
+                      </OpenSpan.Adapters.Web.Controls.Link>
                     </Items>
                   </Content>
                   <Content Name="MatchRules">
                     <Items>
-                      <OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule Name="elementIdMatchRule1" Id="ElementIdMatchRule-8D5898EBF4AE0B0">
+                      <OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule Name="elementIdMatchRule4" Id="ElementIdMatchRule-8D5A0824BDA4EDC">
                         <Text Value="Simple|True|(User Culture)|rioSearchForm" />
                       </OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule>
                     </Items>
                   </Content>
                 </OpenSpan.Adapters.Web.Controls.Form>
-                <OpenSpan.Adapters.Web.Controls.Link Name="lnkSearch" Id="Link-8D5898EC1DCD630">
+                <OpenSpan.Adapters.Web.Controls.WebControl Name="ulMapList" Id="WebControl-8D5A127E4DF598B">
                   <DummyPropertyToDetectReplaceUndo Value="0" />
-                  <ElementId Value="rioSearchButton" />
+                  <ElementId Value="maplist" />
                   <ForwardObjectExplorerEvent Value="True" />
-                  <MatchingIndex Value="18" />
-                  <TagName Value="A" />
-                  <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlAnchorElement, OpenSpan.Adapters.Web" />
-                  <UseElementId Value="True" />
-                  <Content Name="MatchRules">
-                    <Items>
-                      <OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule Name="elementIdMatchRule3" Id="ElementIdMatchRule-8D5898EC1FF5250">
-                        <Text Value="Simple|True|(User Culture)|rioSearchButton" />
-                      </OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule>
-                    </Items>
-                  </Content>
-                </OpenSpan.Adapters.Web.Controls.Link>
-              </Items>
-            </Content>
-            <Content Name="MatchRules">
-              <Items>
-                <OpenSpan.Adapters.Web.MatchRules.DocumentUrlMatchRule Name="documentUrlMatchRule1" Id="DocumentUrlMatchRule-8D5898EBF3C3AB0">
-                  <Fragment Value="Simple|True|(User Culture)|" />
-                  <Host Value="Simple|True|(User Culture)|locators.bankofamerica.com" />
-                  <Path Value="Simple|True|(User Culture)|/" />
-                  <Port Value="443" />
-                  <Query Value="Simple|True|(User Culture)|" />
-                  <Scheme Value="Simple|True|(User Culture)|https" />
-                </OpenSpan.Adapters.Web.MatchRules.DocumentUrlMatchRule>
-                <OpenSpan.Adapters.Web.MatchRules.DocumentTitleMatchRule Name="documentTitleMatchRule1" Id="DocumentTitleMatchRule-8D5898EBF4143C0">
-                  <Text Value="Simple|True|(User Culture)|Bank of America Financial Centers and ATMs" />
-                </OpenSpan.Adapters.Web.MatchRules.DocumentTitleMatchRule>
-              </Items>
-            </Content>
-          </OpenSpan.Adapters.Web.Controls.WebPage>
-          <OpenSpan.Adapters.Web.Controls.WebPage Name="pgBOFALocations" Id="WebPage-8D5898F2FD9BA40">
-            <DummyPropertyToDetectReplaceUndo Value="0" />
-            <ForwardObjectExplorerEvent Value="True" />
-            <IsGlobal Value="True" />
-            <MatchingIndex Value="1" />
-            <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlDocument, OpenSpan.Adapters.Web" />
-            <Content Name="Controls">
-              <Items>
-                <OpenSpan.Adapters.Web.Controls.WebControl Name="divLocation" Id="WebControl-8D5898F2FD28E50">
-                  <DummyPropertyToDetectReplaceUndo Value="0" />
-                  <ElementId Value="" />
-                  <ForwardObjectExplorerEvent Value="True" />
-                  <MatchingIndex Value="55" />
-                  <TagName Value="DIV" />
+                  <IsContainer Value="True" />
+                  <MatchingIndex Value="3" />
+                  <TagName Value="UL" />
                   <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlElement, OpenSpan.Adapters.Web" />
-                  <UseElementId Value="False" />
-                  <UseKeys Value="True" />
+                  <UseElementId Value="True" />
                   <Content Name="Controls">
                     <Items>
-                      <OpenSpan.Adapters.Web.Controls.WebControl Name="lblAddress1" Id="WebControl-8D58A60EE806A80">
+                      <OpenSpan.Adapters.Web.Controls.WebControl Name="divLocation" Id="WebControl-8D5A1288482C745">
                         <DummyPropertyToDetectReplaceUndo Value="0" />
+                        <ElementId Value="lid665589" />
                         <ForwardObjectExplorerEvent Value="True" />
-                        <MatchingIndex Value="65" />
+                        <IsContainer Value="True" />
+                        <MatchingIndex Value="1" />
                         <TagName Value="DIV" />
                         <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlElement, OpenSpan.Adapters.Web" />
                         <UseElementId Value="False" />
-                        <Content Name="MatchRules">
+                        <UseKeys Value="True" />
+                        <Content Name="Controls">
                           <Items>
-                            <OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule Name="elementPathMatchRule3" Id="ElementPathMatchRule-8D58A60EE8B8E10">
-                              <ElementPath Value="Binary">
-                                <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAoAAAAGAgAAAANESVYGAwAAAANESVYGBAAAAANESVYGBQAAAANESVYGBgAAAAJVTAYHAAAAA0RJVgYIAAAAA0RJVgYJAAAAA0RJVgYKAAAABEJPRFkGCwAAAARIVE1MCw==</Binary>
-                              </ElementPath>
-                            </OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule>
+                            <OpenSpan.Adapters.Web.Controls.WebControl Name="divAddress1" Id="WebControl-8D5A128C018AF1B">
+                              <DummyPropertyToDetectReplaceUndo Value="0" />
+                              <ForwardObjectExplorerEvent Value="True" />
+                              <MatchingIndex Value="9" />
+                              <TagName Value="DIV" />
+                              <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlElement, OpenSpan.Adapters.Web" />
+                              <UseElementId Value="False" />
+                              <Content Name="MatchRules">
+                                <Items>
+                                  <OpenSpan.Adapters.Web.MatchRules.ElementClassMatchRule Name="elementClassMatchRule2" Id="ElementClassMatchRule-8D5A128CF17B8B0">
+                                    <Text Value="Simple|True|(User Culture)|address_1" />
+                                  </OpenSpan.Adapters.Web.MatchRules.ElementClassMatchRule>
+                                </Items>
+                              </Content>
+                            </OpenSpan.Adapters.Web.Controls.WebControl>
+                            <OpenSpan.Adapters.Web.Controls.WebControl Name="divName" Id="WebControl-8D5A12A2505F4C7">
+                              <DummyPropertyToDetectReplaceUndo Value="0" />
+                              <ForwardObjectExplorerEvent Value="True" />
+                              <MatchingIndex Value="7" />
+                              <TagName Value="DIV" />
+                              <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlElement, OpenSpan.Adapters.Web" />
+                              <UseElementId Value="False" />
+                              <Content Name="MatchRules">
+                                <Items>
+                                  <OpenSpan.Adapters.Web.MatchRules.AttributeMatchRule Name="attributeMatchRule1" Id="AttributeMatchRule-8D5A12A320A0BC2">
+                                    <Attribute Value="itemprop" />
+                                    <Text Value="Simple|True|(User Culture)|name" />
+                                  </OpenSpan.Adapters.Web.MatchRules.AttributeMatchRule>
+                                </Items>
+                              </Content>
+                            </OpenSpan.Adapters.Web.Controls.WebControl>
+                            <OpenSpan.Adapters.Web.Controls.WebControl Name="divDistance" Id="WebControl-8D5A12A466809A9">
+                              <DummyPropertyToDetectReplaceUndo Value="0" />
+                              <ForwardObjectExplorerEvent Value="True" />
+                              <MatchingIndex Value="4" />
+                              <TagName Value="DIV" />
+                              <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlElement, OpenSpan.Adapters.Web" />
+                              <UseElementId Value="False" />
+                              <Content Name="MatchRules">
+                                <Items>
+                                  <OpenSpan.Adapters.Web.MatchRules.ElementClassMatchRule Name="elementClassMatchRule3" Id="ElementClassMatchRule-8D5A12A49EBA220">
+                                    <Text Value="Simple|True|(User Culture)|distance" />
+                                  </OpenSpan.Adapters.Web.MatchRules.ElementClassMatchRule>
+                                </Items>
+                              </Content>
+                            </OpenSpan.Adapters.Web.Controls.WebControl>
                           </Items>
                         </Content>
-                      </OpenSpan.Adapters.Web.Controls.WebControl>
-                      <OpenSpan.Adapters.Web.Controls.WebControl Name="lblTitle" Id="WebControl-8D58A60D9A92E30">
-                        <DummyPropertyToDetectReplaceUndo Value="0" />
-                        <ForwardObjectExplorerEvent Value="True" />
-                        <MatchingIndex Value="63" />
-                        <TagName Value="DIV" />
-                        <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlElement, OpenSpan.Adapters.Web" />
-                        <UseElementId Value="False" />
                         <Content Name="MatchRules">
                           <Items>
-                            <OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule Name="elementPathMatchRule1" Id="ElementPathMatchRule-8D58A60D9CEDEA0">
-                              <ElementPath Value="Binary">
-                                <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAoAAAAGAgAAAANESVYGAwAAAAFBBgQAAAADRElWBgUAAAADRElWBgYAAAACVUwGBwAAAANESVYGCAAAAANESVYGCQAAAANESVYGCgAAAARCT0RZBgsAAAAESFRNTAs=</Binary>
-                              </ElementPath>
-                            </OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule>
-                          </Items>
-                        </Content>
-                      </OpenSpan.Adapters.Web.Controls.WebControl>
-                      <OpenSpan.Adapters.Web.Controls.WebControl Name="lblOpenNow" Id="WebControl-8D58A60E773C250">
-                        <DummyPropertyToDetectReplaceUndo Value="0" />
-                        <ForwardObjectExplorerEvent Value="True" />
-                        <MatchingIndex Value="0" />
-                        <TagName Value="STRONG" />
-                        <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlElement, OpenSpan.Adapters.Web" />
-                        <UseElementId Value="False" />
-                        <Content Name="MatchRules">
-                          <Items>
-                            <OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule Name="elementPathMatchRule2" Id="ElementPathMatchRule-8D58A60E7874A50">
-                              <ElementPath Value="Binary">
-                                <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAA0AAAAGAgAAAAZTVFJPTkcGAwAAAAJURAYEAAAAAlRSBgUAAAAFVEJPRFkGBgAAAAVUQUJMRQYHAAAAA0RJVgYIAAAAA0RJVgYJAAAAAlVMBgoAAAADRElWBgsAAAADRElWBgwAAAADRElWBg0AAAAEQk9EWQYOAAAABEhUTUwL</Binary>
-                              </ElementPath>
-                            </OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule>
+                            <OpenSpan.Adapters.Web.MatchRules.ElementClassMatchRule Name="elementClassMatchRule1" Id="ElementClassMatchRule-8D5A128A0D84FB1">
+                              <Text Value="Simple|True|(User Culture)|location" />
+                            </OpenSpan.Adapters.Web.MatchRules.ElementClassMatchRule>
                           </Items>
                         </Content>
                       </OpenSpan.Adapters.Web.Controls.WebControl>
@@ -251,9 +242,9 @@
                   </Content>
                   <Content Name="MatchRules">
                     <Items>
-                      <OpenSpan.Adapters.Web.MatchRules.ElementClassMatchRule Name="elementClassMatchRule1" Id="ElementClassMatchRule-8D5898F47ADBBD0">
-                        <Text Value="Simple|True|(User Culture)|location" />
-                      </OpenSpan.Adapters.Web.MatchRules.ElementClassMatchRule>
+                      <OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule Name="elementIdMatchRule1" Id="ElementIdMatchRule-8D5A127E4EA2F42">
+                        <Text Value="Simple|True|(User Culture)|maplist" />
+                      </OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule>
                     </Items>
                   </Content>
                 </OpenSpan.Adapters.Web.Controls.WebControl>
@@ -264,19 +255,21 @@
                 <OpenSpan.Adapters.Web.MatchRules.DocumentUrlMatchRule Name="documentUrlMatchRule2" Id="DocumentUrlMatchRule-8D5898F2FE21EB0">
                   <Fragment Value="Simple|True|(User Culture)|" />
                   <Host Value="Simple|True|(User Culture)|locators.bankofamerica.com" />
-                  <Path Value="Simple|True|(User Culture)|/search" />
+                  <Path Value="Regex|True|(User Culture)|/*" />
                   <Port Value="443" />
                   <Query Value="Simple|True|(User Culture)|" />
                   <Scheme Value="Simple|True|(User Culture)|https" />
                 </OpenSpan.Adapters.Web.MatchRules.DocumentUrlMatchRule>
-                <OpenSpan.Adapters.Web.MatchRules.DocumentTitleMatchRule Name="documentTitleMatchRule2" Id="DocumentTitleMatchRule-8D5898F2FE74ED0">
-                  <Text Value="Simple|True|(User Culture)|Bank of America Financial Centers Search Results" />
-                </OpenSpan.Adapters.Web.MatchRules.DocumentTitleMatchRule>
               </Items>
             </Content>
           </OpenSpan.Adapters.Web.Controls.WebPage>
         </Items>
       </Content>
     </OpenSpan.Adapters.Web.WebAdapter>
+    <OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule Name="elementPathMatchRule4" Id="ElementPathMatchRule-8D5A06A1136CB76">
+      <ElementPath Value="Binary">
+        <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAgAAAAGAgAAAARwYXRoBgMAAAADc3ZnBgQAAAADRElWBgUAAAADRElWBgYAAAADRElWBgcAAAADRElWBggAAAAEQk9EWQYJAAAABEhUTUwL</Binary>
+      </ElementPath>
+    </OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule>
   </Component>
 </OpenSpanDesignDocument>

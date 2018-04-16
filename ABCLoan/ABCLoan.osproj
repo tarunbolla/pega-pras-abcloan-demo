@@ -15,7 +15,7 @@
     <!-- Custom properties -->
     <Name>ABCLoan</Name>
     <Id>Project-8D5898CE61C6300</Id>
-    <Version>8.0.1080.0</Version>
+    <Version>8.0.1087.0</Version>
     <TransformationVersion>8.0.1026.0</TransformationVersion>
     <ConfigurationFile>
     </ConfigurationFile>
@@ -38,7 +38,7 @@
     <!-- Deployment -->
     <DeploymentPackage>True</DeploymentPackage>
     <DeploymentPath>bin\Debug\</DeploymentPath>
-    <DeploymentVersion>1.0</DeploymentVersion>
+    <DeploymentVersion>1.5</DeploymentVersion>
     <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
     <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
     <DeploymentTranslators>True</DeploymentTranslators>
@@ -71,11 +71,19 @@
   </PropertyGroup>
   <Import Project="$(OpenSpanPath)\OpenSpan.targets" />
   <ItemGroup>
+    <Reference Include="Interop.FREngine, Version=11.1.19.72, Culture=neutral, PublicKeyToken=2e1e7aca5d298f96">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Interop.FREngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\log4net.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="OpenSpan">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
     </Reference>
@@ -108,6 +116,10 @@
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.ApplicationFramework.dll</HintPath>
     </Reference>
     <Reference Include="OpenSpan.Automation">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
     </Reference>
@@ -199,7 +211,6 @@
     <Folder Include="Events" />
     <Folder Include="Events\Activities" />
     <Folder Include="Events\Controls" />
-    <Folder Include="Data" />
     <Folder Include="Procedures" />
     <Folder Include="Properties\" />
   </ItemGroup>
@@ -218,7 +229,7 @@
     </Compile>
     <Compile Include="Events\Controls\ABCLoan_E_AllProjects_Started.os">
       <SubType>Component</SubType>
-      <Id>Automator-8D58A88A84E91E0</Id>
+      <Id>Automator-8D59E5F2FE01F90</Id>
     </Compile>
     <Compile Include="Procedures\ABCLoan_P_GetBankLocationsByZip.os">
       <SubType>Component</SubType>
@@ -227,10 +238,6 @@
     <Compile Include="Procedures\ABCLoan_P_NavigateTo.os">
       <SubType>Component</SubType>
       <Id>Automator-8D5898E268E3B10</Id>
-    </Compile>
-    <Compile Include="_ABCLoan_GC.DOMHelpers.cs">
-      <DependentUpon>_ABCLoan_GC.os</DependentUpon>
-      <Id>Script-8D589F9AFF05B20</Id>
     </Compile>
     <Compile Include="_ABCLoan_GC.os">
       <SubType>Component</SubType>
@@ -242,6 +249,5 @@
       <DependentUpon>BOFABankLocator.os</DependentUpon>
       <Deployment>DoNotDeploy</Deployment>
     </Content>
-    <Content Include="Data\BankLocationsSchema.xsd" />
   </ItemGroup>
 </Project>

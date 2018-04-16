@@ -43,10 +43,10 @@
           </ConnectionBlock>
           <ConnectionBlock>
             <DisplayName Value="Properties" />
-            <ConnectableUniqueId Value="Automator-8D58A71B6BD25A0\ConnectableProperties-8D58A89F9307B90" />
-            <PartID Value="4" />
-            <Left Value="40" />
-            <Top Value="120" />
+            <ConnectableUniqueId Value="Automator-8D58A71B6BD25A0\ConnectableProperties-8D58B9364C0FFD5" />
+            <PartID Value="9" />
+            <Left Value="700" />
+            <Top Value="60" />
             <Collapsed Value="False" />
             <WillExecute Value="True" />
             <InstanceName Value="PEGA_GetBankLocationsByZip" />
@@ -54,9 +54,20 @@
           </ConnectionBlock>
           <ConnectionBlock>
             <DisplayName Value="Properties" />
-            <ConnectableUniqueId Value="Automator-8D58A71B6BD25A0\ConnectableProperties-8D58B9364C0FFD5" />
-            <PartID Value="9" />
-            <Left Value="700" />
+            <ConnectableUniqueId Value="Automator-8D58A71B6BD25A0\ConnectableProperties-8D59F96E1C4F793" />
+            <PartID Value="12" />
+            <Left Value="40" />
+            <Top Value="140" />
+            <Collapsed Value="False" />
+            <WillExecute Value="True" />
+            <InstanceName Value="PEGA_GetBankLocationsByZip" />
+            <OverriddenIds />
+          </ConnectionBlock>
+          <ConnectionBlock>
+            <DisplayName Value="SetCompletionStatus" />
+            <ConnectableUniqueId Value="Automator-8D58A71B6BD25A0\ConnectableMethod-8D5A0633BC9A241" />
+            <PartID Value="14" />
+            <Left Value="1020" />
             <Top Value="60" />
             <Collapsed Value="False" />
             <WillExecute Value="True" />
@@ -75,18 +86,6 @@
               <Point value="324, 89" />
               <Point value="355, 89" />
               <Point value="365, 89" />
-            </LinkPoints>
-          </Link>
-          <Link PartID="5" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
-            <From PartID="4" PortName="Location_Zip" PortType="Property" ConnectableId="Automator-8D58A71B6BD25A0\ConnectableProperties-8D58A89F9307B90" MemberComponentId="GlobalContainer-8D5898D5E756860\RobotActivity-8D5898D64061EF0" />
-            <To PartID="2" PortName="param1" PortType="Property" ConnectableId="Automator-8D58A71B6BD25A0\ConnectableMethod-8D58A89F3439B40" MemberComponentId="Automator-8D58A71B6BD25A0\ConnectableMethod-8D58A89F3439B40" />
-            <LinkPoints>
-              <Point value="282, 166" />
-              <Point value="292, 166" />
-              <Point value="292, 166" />
-              <Point value="292, 123" />
-              <Point value="355, 123" />
-              <Point value="365, 123" />
             </LinkPoints>
           </Link>
           <Link PartID="10" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
@@ -113,10 +112,37 @@
               <Point value="705, 106" />
             </LinkPoints>
           </Link>
+          <Link PartID="13" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+            <From PartID="12" PortName="Zip_Code" PortType="Property" ConnectableId="Automator-8D58A71B6BD25A0\ConnectableProperties-8D59F96E1C4F793" MemberComponentId="GlobalContainer-8D5898D5E756860\RobotActivity-8D5898D64061EF0" />
+            <To PartID="2" PortName="param1" PortType="Property" ConnectableId="Automator-8D58A71B6BD25A0\ConnectableMethod-8D58A89F3439B40" MemberComponentId="Automator-8D58A71B6BD25A0\ConnectableMethod-8D58A89F3439B40" />
+            <LinkPoints>
+              <Point value="282, 186" />
+              <Point value="292, 186" />
+              <Point value="292, 186" />
+              <Point value="292, 123" />
+              <Point value="355, 123" />
+              <Point value="365, 123" />
+            </LinkPoints>
+          </Link>
+          <Link PartID="15" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+            <From PartID="9" PortName="Complete" PortType="Event" ConnectableId="Automator-8D58A71B6BD25A0\ConnectableProperties-8D58B9364C0FFD5" MemberComponentId="Automator-8D58A71B6BD25A0\ConnectableProperties-8D58B9364C0FFD5" />
+            <To PartID="14" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D58A71B6BD25A0\ConnectableMethod-8D5A0633BC9A241" MemberComponentId="Automator-8D58A71B6BD25A0\ConnectableMethod-8D5A0633BC9A241" />
+            <LinkPoints>
+              <Point value="942, 89" />
+              <Point value="952, 89" />
+              <Point value="984, 89" />
+              <Point value="984, 89" />
+              <Point value="1015, 89" />
+              <Point value="1025, 89" />
+            </LinkPoints>
+          </Link>
         </Links>
         <Comments />
         <SubGraphs />
       </AutomationDocument>
+      <DocumentPosition Value="Binary">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAEAnRAAAAAAL</Binary>
+      </DocumentPosition>
     </OpenSpan.Automation.Automator>
     <OpenSpan.Automation.ConnectableEvent Name="connectableEvent1" Id="ConnectableEvent-8D58A71D3706810">
       <ComponentName Value="PEGA_GetBankLocationsByZip" />
@@ -179,24 +205,6 @@
         </Items>
       </Content>
     </OpenSpan.Automation.ConnectableMethod>
-    <OpenSpan.Automation.ConnectableProperties Name="connectableProperties1" Id="ConnectableProperties-8D58A89F9307B90">
-      <ComponentName Value="PEGA_GetBankLocationsByZip" />
-      <DefaultValues Value="" />
-      <DisplayName Value="Properties" />
-      <ExceptionsHandled Value="False" />
-      <InstanceTypeName Value="OpenSpan.Interactions.Controls.RobotActivity" />
-      <InstanceUniqueId Value="GlobalContainer-8D5898D5E756860\RobotActivity-8D5898D64061EF0" />
-      <MemberDetails Value=".Location_Zip Property" />
-      <Content Name="MemberPrototypes">
-        <Items>
-          <OpenSpan.Automation.MemberPrototype>
-            <MemberName Value="Location_Zip" />
-            <MemberType Value="Property" />
-            <TypeName Value="System.String" />
-          </OpenSpan.Automation.MemberPrototype>
-        </Items>
-      </Content>
-    </OpenSpan.Automation.ConnectableProperties>
     <OpenSpan.Automation.ConnectableProperties Name="connectableProperties2" Id="ConnectableProperties-8D58B9364C0FFD5">
       <ComponentName Value="PEGA_GetBankLocationsByZip" />
       <DefaultValues Value="" />
@@ -215,5 +223,77 @@
         </Items>
       </Content>
     </OpenSpan.Automation.ConnectableProperties>
+    <OpenSpan.Automation.ConnectableProperties Name="connectableProperties1" Id="ConnectableProperties-8D59F96E1C4F793">
+      <ComponentName Value="PEGA_GetBankLocationsByZip" />
+      <DefaultValues Value="" />
+      <DisplayName Value="Properties" />
+      <ExceptionsHandled Value="False" />
+      <InstanceTypeName Value="OpenSpan.Interactions.Controls.RobotActivity" />
+      <InstanceUniqueId Value="GlobalContainer-8D5898D5E756860\RobotActivity-8D5898D64061EF0" />
+      <MemberDetails Value=".Zip_Code Property" />
+      <Content Name="MemberPrototypes">
+        <Items>
+          <OpenSpan.Automation.MemberPrototype>
+            <MemberName Value="Zip_Code" />
+            <MemberType Value="Property" />
+            <TypeName Value="System.String" />
+          </OpenSpan.Automation.MemberPrototype>
+        </Items>
+      </Content>
+    </OpenSpan.Automation.ConnectableProperties>
+    <OpenSpan.Automation.ConnectableMethod Name="connectableMethod2" Id="ConnectableMethod-8D5A0633BC9A241">
+      <ComponentName Value="PEGA_GetBankLocationsByZip" />
+      <DisplayName Value="SetCompletionStatus" />
+      <ExceptionsHandled Value="False" />
+      <InstanceTypeName Value="OpenSpan.Interactions.Controls.RobotActivity" />
+      <InstanceUniqueId Value="GlobalContainer-8D5898D5E756860\RobotActivity-8D5898D64061EF0" />
+      <MemberDetails Value=".SetCompletionStatus() Method" />
+      <ParamsLength Value="0" />
+      <SerializedParamsDefaultValues Value="" />
+      <Content Name="MemberPrototypes">
+        <Items>
+          <OpenSpan.Automation.MemberPrototype>
+            <MemberName Value="SetCompletionStatus" />
+            <MemberType Value="Method" />
+            <TypeName Value="System.Void" />
+            <Content Name="Signature">
+              <OpenSpan.Automation.MethodSignature>
+                <ReturnType Value="System.Void" />
+                <Content Name="ParameterPrototype">
+                  <Items>
+                    <OpenSpan.Automation.ParameterPrototype>
+                      <CanRead Value="False" />
+                      <CanWrite Value="True" />
+                      <DefaultSet Value="True" />
+                      <DefaultValue Value="Completed" />
+                      <ParamName Value="status" />
+                      <Position Value="0" />
+                      <TypeAssemblyName Value="OpenSpan.Interactions" />
+                      <TypeName Value="OpenSpan.Interactions.Robotics.CompletionStatus" />
+                    </OpenSpan.Automation.ParameterPrototype>
+                    <OpenSpan.Automation.ParameterPrototype>
+                      <CanRead Value="False" />
+                      <CanWrite Value="True" />
+                      <DefaultSet Value="False" />
+                      <ParamName Value="code" />
+                      <Position Value="1" />
+                      <TypeName Value="System.String" />
+                    </OpenSpan.Automation.ParameterPrototype>
+                    <OpenSpan.Automation.ParameterPrototype>
+                      <CanRead Value="False" />
+                      <CanWrite Value="True" />
+                      <DefaultSet Value="False" />
+                      <ParamName Value="message" />
+                      <Position Value="2" />
+                      <TypeName Value="System.String" />
+                    </OpenSpan.Automation.ParameterPrototype>
+                  </Items>
+                </Content>
+              </OpenSpan.Automation.MethodSignature>
+            </Content>
+          </OpenSpan.Automation.MemberPrototype>
+        </Items>
+      </Content>
+    </OpenSpan.Automation.ConnectableMethod>
   </Component>
 </OpenSpanDesignDocument>

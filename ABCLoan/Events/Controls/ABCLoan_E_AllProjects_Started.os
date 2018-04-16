@@ -4,56 +4,82 @@
     <Assembly Value="OpenSpan.Automation" />
     <AssemblyReferences>
       <Assembly Value="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Runtime.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OSComponents.Utilities.TestHarness, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c0cb69f111622a50" />
-      <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     </AssemblyReferences>
     <DynamicAssemblyReferences />
     <FileReferences />
     <BuildReferences />
   </ComponentInfo>
   <Component Version="1.0">
-    <OpenSpan.Automation.Automator Name="ABCLoan_E_AllProjects_Started" Id="Automator-8D58A88A84E91E0">
+    <OpenSpan.Automation.Automator Name="ABCLoan_E_AllProjects_Started" Id="Automator-8D59E5F2FE01F90">
       <AutomationDocument>
         <Name Value="" />
         <Size Value="5000, 5000" />
         <Objects>
           <ConnectionBlock>
             <DisplayName Value="RuntimeLoader.AllProjectsStarted" />
-            <ConnectableUniqueId Value="Automator-8D58A88A84E91E0\ConnectableEvent-8D58A88AB204F80" />
+            <ConnectableUniqueId Value="Automator-8D59E5F2FE01F90\ConnectableEvent-8D59E5F36955DD5" />
             <PartID Value="1" />
-            <Left Value="40" />
-            <Top Value="60" />
+            <Left Value="80" />
+            <Top Value="120" />
             <Collapsed Value="True" />
             <WillExecute Value="True" />
             <InstanceName Value="OpenSpan.Runtime.RuntimeLoader" />
             <OverriddenIds />
           </ConnectionBlock>
           <ConnectionBlock>
-            <DisplayName Value="ShowTestHarness" />
-            <ConnectableUniqueId Value="Automator-8D58A88A84E91E0\ConnectableMethod-8D58A89AF46AB30" />
-            <PartID Value="2" />
-            <Left Value="380" />
-            <Top Value="60" />
+            <DisplayName Value="Properties" />
+            <ConnectableUniqueId Value="Automator-8D59E5F2FE01F90\ConnectableProperties-8D59EF388E22135" />
+            <PartID Value="4" />
+            <Left Value="440" />
+            <Top Value="120" />
             <Collapsed Value="False" />
             <WillExecute Value="True" />
-            <InstanceName Value="testHarness1" />
+            <InstanceName Value="testHarness" />
+            <Fittings>
+              <TopMost Collapsed="False" ActualText="False" />
+            </Fittings>
+            <OverriddenIds />
+          </ConnectionBlock>
+          <ConnectionBlock>
+            <DisplayName Value="ShowTestHarness" />
+            <ConnectableUniqueId Value="Automator-8D59E5F2FE01F90\ConnectableMethod-8D59EF3C35C3BBD" />
+            <PartID Value="7" />
+            <Left Value="660" />
+            <Top Value="120" />
+            <Collapsed Value="False" />
+            <WillExecute Value="True" />
+            <InstanceName Value="testHarness" />
             <OverriddenIds />
           </ConnectionBlock>
         </Objects>
         <Links>
-          <Link PartID="3" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
-            <From PartID="1" PortName="Raised" PortType="Event" ConnectableId="Automator-8D58A88A84E91E0\ConnectableEvent-8D58A88AB204F80" MemberComponentId="Automator-8D58A88A84E91E0\EMPTY" />
-            <To PartID="2" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D58A88A84E91E0\ConnectableMethod-8D58A89AF46AB30" MemberComponentId="Automator-8D58A88A84E91E0\ConnectableMethod-8D58A89AF46AB30" />
+          <Link PartID="6" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+            <From PartID="1" PortName="Raised" PortType="Event" ConnectableId="Automator-8D59E5F2FE01F90\ConnectableEvent-8D59E5F36955DD5" MemberComponentId="Automator-8D59E5F2FE01F90\ConnectableEvent-8D59E5F36955DD5" />
+            <To PartID="4" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D59E5F2FE01F90\ConnectableProperties-8D59EF388E22135" MemberComponentId="Automator-8D59E5F2FE01F90\ConnectableProperties-8D59EF388E22135" />
             <LinkPoints>
-              <Point value="308, 89" />
-              <Point value="318, 89" />
-              <Point value="346, 89" />
-              <Point value="346, 89" />
-              <Point value="375, 89" />
-              <Point value="385, 89" />
+              <Point value="348, 149" />
+              <Point value="358, 149" />
+              <Point value="396, 149" />
+              <Point value="396, 149" />
+              <Point value="435, 149" />
+              <Point value="445, 149" />
+            </LinkPoints>
+          </Link>
+          <Link PartID="8" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+            <From PartID="4" PortName="Complete" PortType="Event" ConnectableId="Automator-8D59E5F2FE01F90\ConnectableProperties-8D59EF388E22135" MemberComponentId="Automator-8D59E5F2FE01F90\ConnectableProperties-8D59EF388E22135" />
+            <To PartID="7" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D59E5F2FE01F90\ConnectableMethod-8D59EF3C35C3BBD" MemberComponentId="Automator-8D59E5F2FE01F90\ConnectableMethod-8D59EF3C35C3BBD" />
+            <LinkPoints>
+              <Point value="574, 149" />
+              <Point value="584, 149" />
+              <Point value="619, 149" />
+              <Point value="619, 149" />
+              <Point value="655, 149" />
+              <Point value="665, 149" />
             </LinkPoints>
           </Link>
         </Links>
@@ -61,7 +87,7 @@
         <SubGraphs />
       </AutomationDocument>
     </OpenSpan.Automation.Automator>
-    <OpenSpan.Automation.ConnectableEvent Name="connectableEvent1" Id="ConnectableEvent-8D58A88AB204F80">
+    <OpenSpan.Automation.ConnectableEvent Name="connectableEvent1" Id="ConnectableEvent-8D59E5F36955DD5">
       <ComponentName Value="OpenSpan.Runtime.RuntimeLoader" />
       <DisplayName Value="RuntimeLoader.AllProjectsStarted" />
       <ExceptionsHandled Value="False" />
@@ -78,12 +104,30 @@
         </Items>
       </Content>
     </OpenSpan.Automation.ConnectableEvent>
-    <OpenSpan.Automation.ConnectableMethod Name="connectableMethod1" Id="ConnectableMethod-8D58A89AF46AB30">
-      <ComponentName Value="testHarness1" />
+    <OpenSpan.Automation.ConnectableProperties Name="connectableProperties1" Id="ConnectableProperties-8D59EF388E22135">
+      <ComponentName Value="testHarness" />
+      <DefaultValues Value="TopMost=False" />
+      <DisplayName Value="Properties" />
+      <ExceptionsHandled Value="False" />
+      <InstanceTypeName Value="OSComponents.Utilities.TestHarness.TestHarness" />
+      <InstanceUniqueId Value="GlobalContainer-8D5898D5E756860\TestHarness-8D59E5EA61F0FBE" />
+      <MemberDetails Value=".TopMost Property" />
+      <Content Name="MemberPrototypes">
+        <Items>
+          <OpenSpan.Automation.MemberPrototype>
+            <MemberName Value="TopMost" />
+            <MemberType Value="Property" />
+            <TypeName Value="System.Boolean" />
+          </OpenSpan.Automation.MemberPrototype>
+        </Items>
+      </Content>
+    </OpenSpan.Automation.ConnectableProperties>
+    <OpenSpan.Automation.ConnectableMethod Name="connectableMethod1" Id="ConnectableMethod-8D59EF3C35C3BBD">
+      <ComponentName Value="testHarness" />
       <DisplayName Value="ShowTestHarness" />
       <ExceptionsHandled Value="False" />
       <InstanceTypeName Value="OSComponents.Utilities.TestHarness.TestHarness" />
-      <InstanceUniqueId Value="GlobalContainer-8D5898D5E756860\TestHarness-8D58A89A7E616A0" />
+      <InstanceUniqueId Value="GlobalContainer-8D5898D5E756860\TestHarness-8D59E5EA61F0FBE" />
       <MemberDetails Value=".ShowTestHarness() Method" />
       <ParamsLength Value="0" />
       <SerializedParamsDefaultValues Value="" />
