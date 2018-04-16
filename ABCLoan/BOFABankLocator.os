@@ -159,15 +159,14 @@
                     </Items>
                   </Content>
                 </OpenSpan.Adapters.Web.Controls.Form>
-                <OpenSpan.Adapters.Web.Controls.WebControl Name="ulMapList" Id="WebControl-8D5A127E4DF598B">
+                <OpenSpan.Adapters.Web.Controls.WebControl Name="divMapList" Id="WebControl-8D5A389CFFE1979">
                   <DummyPropertyToDetectReplaceUndo Value="0" />
-                  <ElementId Value="maplist" />
                   <ForwardObjectExplorerEvent Value="True" />
                   <IsContainer Value="True" />
-                  <MatchingIndex Value="3" />
-                  <TagName Value="UL" />
+                  <MatchingIndex Value="0" />
+                  <TagName Value="DIV" />
                   <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlElement, OpenSpan.Adapters.Web" />
-                  <UseElementId Value="True" />
+                  <UseElementId Value="False" />
                   <Content Name="Controls">
                     <Items>
                       <OpenSpan.Adapters.Web.Controls.WebControl Name="divLocation" Id="WebControl-8D5A1288482C745">
@@ -242,9 +241,11 @@
                   </Content>
                   <Content Name="MatchRules">
                     <Items>
-                      <OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule Name="elementIdMatchRule1" Id="ElementIdMatchRule-8D5A127E4EA2F42">
-                        <Text Value="Simple|True|(User Culture)|maplist" />
-                      </OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule>
+                      <OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule Name="elementPathMatchRule1" Id="ElementPathMatchRule-8D5A389D00A0086">
+                        <ElementPath Value="Binary">
+                          <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAcAAAAGAgAAAANESVYGAwAAAAJVTAYEAAAAA0RJVgYFAAAAA0RJVgYGAAAAA0RJVgYHAAAABEJPRFkGCAAAAARIVE1MCw==</Binary>
+                        </ElementPath>
+                      </OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule>
                     </Items>
                   </Content>
                 </OpenSpan.Adapters.Web.Controls.WebControl>

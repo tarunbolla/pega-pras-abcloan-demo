@@ -38,7 +38,7 @@
     <!-- Deployment -->
     <DeploymentPackage>True</DeploymentPackage>
     <DeploymentPath>bin\Debug\</DeploymentPath>
-    <DeploymentVersion>1.5</DeploymentVersion>
+    <DeploymentVersion>1.6</DeploymentVersion>
     <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
     <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
     <DeploymentTranslators>True</DeploymentTranslators>
@@ -238,6 +238,10 @@
     <Compile Include="Procedures\ABCLoan_P_NavigateTo.os">
       <SubType>Component</SubType>
       <Id>Automator-8D5898E268E3B10</Id>
+    </Compile>
+    <Compile Include="_ABCLoan_GC.HelperScripts.cs">
+      <DependentUpon>_ABCLoan_GC.os</DependentUpon>
+      <Id>Script-8D5A38C5A7BD837</Id>
     </Compile>
     <Compile Include="_ABCLoan_GC.os">
       <SubType>Component</SubType>
