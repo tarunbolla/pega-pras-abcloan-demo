@@ -62,7 +62,7 @@
         </Items>
       </Content>
     </OpenSpan.Interactions.Controls.RobotActivity>
-    <OpenSpan.Controls.MessageDialog Name="messageDialog1" Id="MessageDialog-8D58A6EBB27DA20">
+    <OpenSpan.Controls.MessageDialog Name="messageDialog" Id="MessageDialog-8D58A6EBB27DA20">
       <Caption Value="Information" />
     </OpenSpan.Controls.MessageDialog>
     <OSComponents.Utilities.TestHarness.TestHarness Name="testHarness" Id="TestHarness-8D59E5EA61F0FBE">
@@ -78,6 +78,8 @@
         <Items>
           <OpenSpan.DynamicMembers.DynamicMethodInfo dynamicType="Method" name="DataTableToXML" aliasName="DataTableToXML" visibility="DefaultOn" source="" blockTypeName="" returnType="System.String">
             <param name="dataTable" aliasName="dataTable" paramType="System.Data.DataTable" isIn="False" isOut="False" position="0" />
+            <param name="tableName" aliasName="tableName" paramType="System.String" isIn="False" isOut="False" position="1" />
+            <param name="setName" aliasName="setName" paramType="System.String" isIn="False" isOut="False" position="2" />
           </OpenSpan.DynamicMembers.DynamicMethodInfo>
         </Items>
       </Content>

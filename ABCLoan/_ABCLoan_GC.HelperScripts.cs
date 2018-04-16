@@ -17,8 +17,16 @@ namespace Dynamic.Script_8D5A38C5A7BD837
 	[OpenSpan.Design.ComponentIdentityAttribute("Script-8D5A38C5A7BD837")]
 	public sealed class Script
 	{
-		public String DataTableToXML(DataTable dataTable)
+		public String DataTableToXML(DataTable dataTable, String tableName, String setName)
 		{
+			if(!String.IsNullOrEmpty(tableName))
+			{
+				dataTable.TableName = tableName;
+			}
+			if(!String.IsNullOrEmpty(setName))
+			{
+				dataTable.DataSet.DataSetName = setName;
+			}
 			using (var stream = new MemoryStream())
 			{
 				dataTable.WriteXml(stream);
