@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ERR-NAV-ADAPTER" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;MessageDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;Caption&gt;Error&lt;/Caption&gt;&lt;Code&gt;ERR-NAV-ADAPTER&lt;/Code&gt;&lt;Message&gt;Error! Unable to start Adapter.&lt;/Message&gt;&lt;MessageBoxButton&gt;OK&lt;/MessageBoxButton&gt;&lt;MessageBoxDefaultButton&gt;Button1&lt;/MessageBoxDefaultButton&gt;&lt;MessageBoxIcon&gt;Error&lt;/MessageBoxIcon&gt;&lt;/MessageDefinition&gt;</value>
+  </data>
 </root>

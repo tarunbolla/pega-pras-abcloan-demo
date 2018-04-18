@@ -51,6 +51,7 @@
   </ComponentInfo>
   <Component Version="1.0">
     <OpenSpan.Adapters.Web.WebAdapter Name="BOFABankLocator" Id="WebAdapter-8D5898EA359DCD0">
+      <StartOnProjectStart Value="False" />
       <StartPage Value="https://locators.bankofamerica.com/" />
       <Content Name="Controls">
         <Items>

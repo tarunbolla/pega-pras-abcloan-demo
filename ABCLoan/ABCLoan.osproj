@@ -26,7 +26,7 @@
     <DeploymentFiles>
     </DeploymentFiles>
     <CustomUpgradeVersion>0.0</CustomUpgradeVersion>
-    <MessageDefinition />
+    <MessageDefinition>[Caption:Error,Code:ERR-NAV-ADAPTER,Message:Error! Unable to start Adapter.,MessageBoxButton:OK,MessageBoxDefaultButton:Button1,MessageBoxIcon:Error;</MessageDefinition>
     <DebuggerPlatform>Default</DebuggerPlatform>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -38,7 +38,7 @@
     <!-- Deployment -->
     <DeploymentPackage>True</DeploymentPackage>
     <DeploymentPath>bin\Debug\</DeploymentPath>
-    <DeploymentVersion>1.8</DeploymentVersion>
+    <DeploymentVersion>1.10</DeploymentVersion>
     <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
     <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
     <DeploymentTranslators>True</DeploymentTranslators>

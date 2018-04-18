@@ -64,8 +64,8 @@
             <LinkPoints>
               <Point value="348, 149" />
               <Point value="358, 149" />
-              <Point value="396, 149" />
-              <Point value="396, 149" />
+              <Point value="358, 149" />
+              <Point value="358, 149" />
               <Point value="435, 149" />
               <Point value="445, 149" />
             </LinkPoints>
