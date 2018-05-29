@@ -15,7 +15,7 @@
     <!-- Custom properties -->
     <Name>ABCLoan</Name>
     <Id>Project-8D5898CE61C6300</Id>
-    <Version>8.0.1087.0</Version>
+    <Version>8.0.1093.0</Version>
     <TransformationVersion>8.0.1026.0</TransformationVersion>
     <ConfigurationFile>
     </ConfigurationFile>
@@ -56,7 +56,7 @@
     <!-- Deployment -->
     <DeploymentPackage>True</DeploymentPackage>
     <DeploymentPath>bin\Release\</DeploymentPath>
-    <DeploymentVersion>1.0</DeploymentVersion>
+    <DeploymentVersion>1.4</DeploymentVersion>
     <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
     <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
     <DeploymentTranslators>True</DeploymentTranslators>
@@ -79,7 +79,7 @@
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\log4net.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan">
+    <Reference Include="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
     </Reference>
@@ -115,7 +115,7 @@
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.ApplicationFramework.dll</HintPath>
     </Reference>
-    <Reference Include="OpenSpan.Automation">
+    <Reference Include="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
     </Reference>

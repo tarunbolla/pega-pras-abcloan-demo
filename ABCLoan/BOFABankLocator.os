@@ -242,11 +242,25 @@
                   </Content>
                   <Content Name="MatchRules">
                     <Items>
-                      <OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule Name="elementPathMatchRule1" Id="ElementPathMatchRule-8D5A389D00A0086">
-                        <ElementPath Value="Binary">
-                          <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAcAAAAGAgAAAANESVYGAwAAAAJVTAYEAAAAA0RJVgYFAAAAA0RJVgYGAAAAA0RJVgYHAAAABEJPRFkGCAAAAARIVE1MCw==</Binary>
-                        </ElementPath>
-                      </OpenSpan.Adapters.Web.MatchRules.ElementPathMatchRule>
+                      <OpenSpan.Adapters.Web.MatchRules.ElementClassMatchRule Name="elementClassMatchRule4" Id="ElementClassMatchRule-8D5C2DF6479A63F">
+                        <Text Value="Simple|True|(User Culture)|tlsmap_list" />
+                      </OpenSpan.Adapters.Web.MatchRules.ElementClassMatchRule>
+                    </Items>
+                  </Content>
+                </OpenSpan.Adapters.Web.Controls.WebControl>
+                <OpenSpan.Adapters.Web.Controls.WebControl Name="divGMap" Id="WebControl-8D5C2DEFE44503B">
+                  <DummyPropertyToDetectReplaceUndo Value="0" />
+                  <ElementId Value="gmap" />
+                  <ForwardObjectExplorerEvent Value="True" />
+                  <MatchingIndex Value="1275" />
+                  <TagName Value="DIV" />
+                  <TargetTypeString Value="OpenSpan.Adapters.Web.HtmlElement, OpenSpan.Adapters.Web" />
+                  <UseElementId Value="True" />
+                  <Content Name="MatchRules">
+                    <Items>
+                      <OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule Name="elementIdMatchRule1" Id="ElementIdMatchRule-8D5C2DF3AA02532">
+                        <Text Value="Simple|True|(User Culture)|gmap" />
+                      </OpenSpan.Adapters.Web.MatchRules.ElementIdMatchRule>
                     </Items>
                   </Content>
                 </OpenSpan.Adapters.Web.Controls.WebControl>

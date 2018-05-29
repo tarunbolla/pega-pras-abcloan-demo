@@ -8,6 +8,8 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Xml;
 using System.Text;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace Dynamic.Script_8D5A38C5A7BD837
 {
@@ -32,6 +34,17 @@ namespace Dynamic.Script_8D5A38C5A7BD837
 				dataTable.WriteXml(stream);
 				return Encoding.UTF8.GetString(stream.GetBuffer(), 0, (int) stream.Length);
 			}
+		}
+
+		public String ImageToBase64(Image image) 
+		{
+			string base64 = null;
+			using (MemoryStream ms = new MemoryStream())
+			{
+				image.Save(ms, ImageFormat.Png);
+				base64 = Convert.ToBase64String(ms.ToArray());
+			}
+			return base64;
 		}
 	}
 }

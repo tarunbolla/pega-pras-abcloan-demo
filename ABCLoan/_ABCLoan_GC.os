@@ -5,12 +5,21 @@
     <AssemblyReferences>
       <Assembly Value="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       <Assembly Value="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Adapters, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Adapters.ActiveX, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Adapters.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Adapters.Windows, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Adapters.WinInet, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.ApplicationFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Interactions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Interactions.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Runtime.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Script, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OSComponents.Utilities.TestHarness, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c0cb69f111622a50" />
     </AssemblyReferences>
@@ -28,11 +37,18 @@
           <OpenSpan.DynamicMembers.DynamicPropertyInfo dynamicType="Property" name="Case_ID" canRead="True" canWrite="True" type="System.String" aliasName="Case_ID" shouldSerialize="False" visibility="DefaultOn" source="" blockTypeName="" />
           <OpenSpan.DynamicMembers.DynamicPropertyInfo dynamicType="Property" name="BankLocationsXML" canRead="True" canWrite="True" type="System.String" aliasName="BankLocationsXML" shouldSerialize="False" visibility="DefaultOn" source="" blockTypeName="" />
           <OpenSpan.DynamicMembers.DynamicPropertyInfo dynamicType="Property" name="Zip_Code" canRead="True" canWrite="True" type="System.String" aliasName="Zip_Code" shouldSerialize="False" visibility="DefaultOn" source="" blockTypeName="" />
+          <OpenSpan.DynamicMembers.DynamicPropertyInfo dynamicType="Property" name="BankLocationsScreenshotBase64" canRead="True" canWrite="True" type="System.String" aliasName="BankLocationsScreenshotBase64" shouldSerialize="False" visibility="DefaultOn" source="" blockTypeName="" />
         </Items>
       </Content>
       <Content Name="Fields">
         <Capacity Value="4" />
         <Items>
+          <OpenSpan.Interactions.Robotics.ClassField>
+            <DataType Value="String" />
+            <Id Value="!BANKLOCATIONSSCREENSHOTBASE64" />
+            <Label Value="BankLocationsScreenshotBase64" />
+            <RuleName Value="BankLocationsScreenshotBase64" />
+          </OpenSpan.Interactions.Robotics.ClassField>
           <OpenSpan.Interactions.Robotics.ClassField>
             <DataType Value="String" />
             <Id Value="!BANKLOCATIONSXML" />
@@ -72,6 +88,9 @@
             <param name="dataTable" aliasName="dataTable" paramType="System.Data.DataTable" isIn="False" isOut="False" position="0" />
             <param name="tableName" aliasName="tableName" paramType="System.String" isIn="False" isOut="False" position="1" />
             <param name="setName" aliasName="setName" paramType="System.String" isIn="False" isOut="False" position="2" />
+          </OpenSpan.DynamicMembers.DynamicMethodInfo>
+          <OpenSpan.DynamicMembers.DynamicMethodInfo dynamicType="Method" name="ImageToBase64" aliasName="ImageToBase64" visibility="DefaultOn" source="" blockTypeName="" returnType="System.String">
+            <param name="image" aliasName="image" paramType="System.Drawing.Image" isIn="False" isOut="False" position="0" />
           </OpenSpan.DynamicMembers.DynamicMethodInfo>
         </Items>
       </Content>

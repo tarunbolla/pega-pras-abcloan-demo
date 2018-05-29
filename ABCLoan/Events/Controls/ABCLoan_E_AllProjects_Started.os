@@ -38,7 +38,7 @@
             <Left Value="440" />
             <Top Value="120" />
             <Collapsed Value="False" />
-            <WillExecute Value="True" />
+            <WillExecute Value="False" />
             <InstanceName Value="testHarness" />
             <Fittings>
               <TopMost Collapsed="False" ActualText="False" />
@@ -58,18 +58,6 @@
           </ConnectionBlock>
         </Objects>
         <Links>
-          <Link PartID="6" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
-            <From PartID="1" PortName="Raised" PortType="Event" ConnectableId="Automator-8D59E5F2FE01F90\ConnectableEvent-8D59E5F36955DD5" MemberComponentId="Automator-8D59E5F2FE01F90\ConnectableEvent-8D59E5F36955DD5" />
-            <To PartID="4" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D59E5F2FE01F90\ConnectableProperties-8D59EF388E22135" MemberComponentId="Automator-8D59E5F2FE01F90\ConnectableProperties-8D59EF388E22135" />
-            <LinkPoints>
-              <Point value="348, 149" />
-              <Point value="358, 149" />
-              <Point value="358, 149" />
-              <Point value="358, 149" />
-              <Point value="435, 149" />
-              <Point value="445, 149" />
-            </LinkPoints>
-          </Link>
           <Link PartID="8" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
             <From PartID="4" PortName="Complete" PortType="Event" ConnectableId="Automator-8D59E5F2FE01F90\ConnectableProperties-8D59EF388E22135" MemberComponentId="Automator-8D59E5F2FE01F90\ConnectableProperties-8D59EF388E22135" />
             <To PartID="7" PortName="DoWork" PortType="Method" ConnectableId="Automator-8D59E5F2FE01F90\ConnectableMethod-8D59EF3C35C3BBD" MemberComponentId="Automator-8D59E5F2FE01F90\ConnectableMethod-8D59EF3C35C3BBD" />

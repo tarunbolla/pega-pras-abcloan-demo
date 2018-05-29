@@ -5,6 +5,8 @@
     <AssemblyReferences>
       <Assembly Value="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <Assembly Value="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Interactions.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
@@ -94,8 +96,8 @@
             <LinkPoints>
               <Point value="640, 106" />
               <Point value="650, 106" />
-              <Point value="672, 106" />
-              <Point value="672, 89" />
+              <Point value="652, 106" />
+              <Point value="652, 89" />
               <Point value="695, 89" />
               <Point value="705, 89" />
             </LinkPoints>
@@ -106,8 +108,8 @@
             <LinkPoints>
               <Point value="640, 140" />
               <Point value="650, 140" />
-              <Point value="672, 140" />
-              <Point value="672, 106" />
+              <Point value="652, 140" />
+              <Point value="652, 106" />
               <Point value="695, 106" />
               <Point value="705, 106" />
             </LinkPoints>
@@ -130,10 +132,22 @@
             <LinkPoints>
               <Point value="942, 89" />
               <Point value="952, 89" />
-              <Point value="984, 89" />
-              <Point value="984, 89" />
+              <Point value="952, 89" />
+              <Point value="952, 89" />
               <Point value="1015, 89" />
               <Point value="1025, 89" />
+            </LinkPoints>
+          </Link>
+          <Link PartID="16" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+            <From PartID="2" PortName="_param2" PortType="Property" ConnectableId="Automator-8D58A71B6BD25A0\ConnectableMethod-8D58A89F3439B40" MemberComponentId="Automator-8D58A71B6BD25A0\ConnectableMethod-8D58A89F3439B40" />
+            <To PartID="9" PortName="BankLocationsScreenshotBase64" PortType="Property" ConnectableId="Automator-8D58A71B6BD25A0\ConnectableProperties-8D58B9364C0FFD5" MemberComponentId="GlobalContainer-8D5898D5E756860\RobotActivity-8D5898D64061EF0" />
+            <LinkPoints>
+              <Point value="640, 157" />
+              <Point value="650, 157" />
+              <Point value="672, 157" />
+              <Point value="672, 123" />
+              <Point value="695, 123" />
+              <Point value="705, 123" />
             </LinkPoints>
           </Link>
         </Links>
@@ -141,7 +155,7 @@
         <SubGraphs />
       </AutomationDocument>
       <DocumentPosition Value="Binary">
-        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAEAnRAAAAAAL</Binary>
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACJQwAAAAAL</Binary>
       </DocumentPosition>
     </OpenSpan.Automation.Automator>
     <OpenSpan.Automation.ConnectableEvent Name="connectableEvent1" Id="ConnectableEvent-8D58A71D3706810">
@@ -197,6 +211,14 @@
                       <Position Value="1" />
                       <TypeName Value="System.String" />
                     </OpenSpan.Automation.ParameterPrototype>
+                    <OpenSpan.Automation.ParameterPrototype>
+                      <CanRead Value="True" />
+                      <CanWrite Value="False" />
+                      <DefaultSet Value="False" />
+                      <ParamName Value="_param2" />
+                      <Position Value="2" />
+                      <TypeName Value="System.String" />
+                    </OpenSpan.Automation.ParameterPrototype>
                   </Items>
                 </Content>
               </OpenSpan.Automation.MethodSignature>
@@ -212,11 +234,16 @@
       <ExceptionsHandled Value="False" />
       <InstanceTypeName Value="OpenSpan.Interactions.Controls.RobotActivity" />
       <InstanceUniqueId Value="GlobalContainer-8D5898D5E756860\RobotActivity-8D5898D64061EF0" />
-      <MemberDetails Value=".BankLocationsXML Property" />
+      <MemberDetails Value=" - Properties(BankLocationsXML, BankLocationsScreenshotBase64)" />
       <Content Name="MemberPrototypes">
         <Items>
           <OpenSpan.Automation.MemberPrototype>
             <MemberName Value="BankLocationsXML" />
+            <MemberType Value="Property" />
+            <TypeName Value="System.String" />
+          </OpenSpan.Automation.MemberPrototype>
+          <OpenSpan.Automation.MemberPrototype>
+            <MemberName Value="BankLocationsScreenshotBase64" />
             <MemberType Value="Property" />
             <TypeName Value="System.String" />
           </OpenSpan.Automation.MemberPrototype>
