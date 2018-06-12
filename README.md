@@ -8,5 +8,5 @@ Webpage used to do screen scraping - https://locators.bankofamerica.com/
 
 Pega RAP for RPA - misc/ABCLoan.zip
 Pega Operators - 
-Robot: Robot.ABCLoan / rules
+Robot: Robot.User / rules
 Admin: Admin.ABCLoan / rules
