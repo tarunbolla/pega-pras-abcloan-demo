@@ -1,4 +1,4 @@
-<OpenSpanDesignDocument Version="8.0.1026.0" Serializer="2.0" Culture="en-US">
+<OpenSpanDesignDocument Version="8.0.2000.3" Serializer="2.0" Culture="en-US">
   <ComponentInfo>
     <Type Value="OpenSpan.Adapters.Web.WebAdapter" />
     <Assembly Value="OpenSpan.Adapters.Web" />
@@ -20,29 +20,31 @@
     </FileReferences>
     <BuildReferences>
       <File Value="DefaultWindowFactoryConfiguration.xml" />
-      <File Value="OpenSpan.ActiveX.x32.dll" />
-      <File Value="OpenSpan.ActiveX.x64.dll" />
-      <File Value="OpenSpan.Brokers.Windows.x32.dll" />
-      <File Value="OpenSpan.Brokers.Windows.x64.dll" />
+      <File Value="Pega.ActiveX.x32.dll" />
+      <File Value="Pega.ActiveX.x64.dll" />
+      <File Value="Pega.Windows.Broker.x32.dll" />
+      <File Value="Pega.Windows.Broker.x64.dll" />
       <File Value="openspan.ini" />
-      <File Value="OpenSpan.Native.IPC.x32.dll" />
-      <File Value="OpenSpan.Native.IPC.x64.dll" />
-      <File Value="OpenSpan.RemoteFunctions.x32.dll" />
-      <File Value="OpenSpan.RemoteFunctions.x64.dll" />
-      <File Value="OpenSpan.Scout.x32.dll" />
-      <File Value="OpenSpan.Scout.x64.dll" />
-      <File Value="OpenSpan.Security.x32.dll" />
-      <File Value="OpenSpan.Security.x64.dll" />
-      <File Value="OpenSpan.SharedMemory.x32.dll" />
-      <File Value="OpenSpan.SharedMemory.x64.dll" />
-      <File Value="OpenSpan.Sinon.x32.dll" />
-      <File Value="OpenSpan.Sinon.x64.dll" />
+      <File Value="Pega.Native.Remoting.x32.dll" />
+      <File Value="Pega.Native.Remoting.x64.dll" />
+      <File Value="Pega.Scout.x32.dll" />
+      <File Value="Pega.GlobalAllocator.x32.dll" />
+      <File Value="Pega.GlobalAllocator.x64.dll" />
+      <File Value="Pega.WinQueue.x32.dll" />
+      <File Value="Pega.WinQueue.x64.dll" />
+      <File Value="Pega.Scout.x64.dll" />
+      <File Value="Pega.Security.x32.dll" />
+      <File Value="Pega.Security.x64.dll" />
+      <File Value="Pega.SharedMemory.x32.dll" />
+      <File Value="Pega.SharedMemory.x64.dll" />
+      <File Value="Pega.Sinon.x32.dll" />
+      <File Value="Pega.Sinon.x64.dll" />
       <File Value="OpenSpan.Translators.InternetExplorer.x32.dll" />
       <File Value="OpenSpan.Translators.InternetExplorer.x64.dll" />
-      <File Value="OpenSpan.Utilities.x32.dll" />
-      <File Value="OpenSpan.Utilities.x64.dll" />
-      <File Value="OpenSpan.WER.x32.dll" />
-      <File Value="OpenSpan.WER.x64.dll" />
+      <File Value="Pega.Utilities.x32.dll" />
+      <File Value="Pega.Utilities.x64.dll" />
+      <File Value="Pega.WER.x32.dll" />
+      <File Value="Pega.WER.x64.dll" />
       <File Value="OpenSpan.WinInet.x32.dll" />
       <File Value="OpenSpan.WinInet.x64.dll" />
       <File Value="OpenSpan.x32.sys" />

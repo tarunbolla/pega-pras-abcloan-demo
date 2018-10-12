@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProductVersion>8.0</ProductVersion>
+    <ProductVersion>8.1</ProductVersion>
     <ProjectGuid>19553728-de87-4f2d-a079-2c3f0cfd3e40</ProjectGuid>
     <RootNamespace>ABCLoan</RootNamespace>
     <AssemblyName>ABCLoan</AssemblyName>
@@ -15,8 +15,8 @@
     <!-- Custom properties -->
     <Name>ABCLoan</Name>
     <Id>Project-8D5898CE61C6300</Id>
-    <Version>8.0.1093.0</Version>
-    <TransformationVersion>8.0.1026.0</TransformationVersion>
+    <Version>8.0.2007.0</Version>
+    <TransformationVersion>8.0.2000.3</TransformationVersion>
     <ConfigurationFile>
     </ConfigurationFile>
     <StartupForm>
@@ -25,9 +25,11 @@
     <!-- Deployment -->
     <DeploymentFiles>
     </DeploymentFiles>
-    <CustomUpgradeVersion>0.0</CustomUpgradeVersion>
+    <CustomUpgradeVersion>
+    </CustomUpgradeVersion>
     <MessageDefinition>[Caption:Error,Code:ERR-NAV-ADAPTER,Message:Error! Unable to start Adapter.,MessageBoxButton:OK,MessageBoxDefaultButton:Button1,MessageBoxIcon:Error;</MessageDefinition>
     <DebuggerPlatform>Default</DebuggerPlatform>
+    <InteractionConfigurationFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -56,7 +58,7 @@
     <!-- Deployment -->
     <DeploymentPackage>True</DeploymentPackage>
     <DeploymentPath>bin\Release\</DeploymentPath>
-    <DeploymentVersion>1.4</DeploymentVersion>
+    <DeploymentVersion>1.9</DeploymentVersion>
     <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
     <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
     <DeploymentTranslators>True</DeploymentTranslators>
@@ -79,103 +81,91 @@
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\log4net.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
     </Reference>
-    <Reference Include="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
     </Reference>
-    <Reference Include="OpenSpan.Adapters, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Adapters">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.dll</HintPath>
     </Reference>
-    <Reference Include="OpenSpan.Adapters.ActiveX, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Adapters.ActiveX">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.ActiveX.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.Adapters.Virtual, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Adapters.Virtual">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Virtual.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.Adapters.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Adapters.Web">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Web.dll</HintPath>
     </Reference>
-    <Reference Include="OpenSpan.Adapters.Windows, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Adapters.Windows">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Windows.dll</HintPath>
     </Reference>
-    <Reference Include="OpenSpan.Adapters.WinInet, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Adapters.WinInet">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.WinInet.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.ApplicationFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.ApplicationFramework">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.ApplicationFramework.dll</HintPath>
     </Reference>
-    <Reference Include="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Automation">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
     </Reference>
-    <Reference Include="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Automation">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
     </Reference>
-    <Reference Include="OpenSpan.Automation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Automation">
       <Private>False</Private>
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
     </Reference>
-    <Reference Include="OpenSpan.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
-      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Common.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="OpenSpan.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Controls">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Controls.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.Events, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Events">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Events.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.Interactions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Interactions">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Interactions.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.Interactions.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Interactions.Controls">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Interactions.Controls.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.IPC, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
-      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.IPC.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="OpenSpan.NativeInterop, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
-      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.NativeInterop.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="OpenSpan.Recording, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Recording">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Recording.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.Script, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Script">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Script.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.Server.Client, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Server.Client">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Server.Client.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.Threading, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Threading">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Threading.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.TranslatorIpc, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.TranslatorIpc">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.TranslatorIpc.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.Virtual.Interfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Virtual.Interfaces">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Virtual.Interfaces.dll</HintPath>
       <Private>False</Private>
     </Reference>
@@ -198,12 +188,52 @@
     <Reference Include="System.Xml">
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="OpenSpan.Runtime.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+    <Reference Include="OpenSpan.Runtime.Core">
       <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Runtime.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Interop">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Pega.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Remoting">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Pega.Remoting.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Scout.Interop">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Pega.Scout.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Ipc.Interop">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Pega.Ipc.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.SharedMemory.Interop">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Pega.SharedMemory.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Utilities.Interop">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Pega.Utilities.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.WinQueue.Interop">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Pega.WinQueue.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Scout.Remoting.Interop">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Pega.Scout.Remoting.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Service.Remoting">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Pega.Service.Remoting.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Windows.Broker.Interop">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\Pega.Windows.Broker.Interop.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
